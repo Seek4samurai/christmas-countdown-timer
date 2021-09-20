@@ -19,7 +19,7 @@ function countdown(){
     const mins = Math.floor(totalSeconds / 60) % 60;
     const seconds = Math.floor(totalSeconds) % 60;  
 
-    daysElement.innerHTML = days;
+    daysElement.innerHTML = formattime(days);
     hoursElement.innerHTML = formattime(hours);
     minsElement.innerHTML = formattime(mins);
     secondsElement.innerHTML = formattime(seconds);
