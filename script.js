@@ -4,7 +4,8 @@ const hoursElement = document.getElementById("hours");
 const minsElement = document.getElementById("mins");
 const secondsElement = document.getElementById("seconds");
 
-const newYeareve = "1 Jan 2021";
+//change this date to current year
+const newYeareve = "1 Jan 2022";
 
 //Functions here---------------------------------------
 function countdown(){
@@ -25,9 +26,8 @@ function countdown(){
 }
 
 function formattime(time){
-    return time < 10 ? `0${time}` : time;
+    return time < 10 ? (`0${time}`) : time;
 }
 
 countdown();
-
 setInterval(countdown, 1000);
